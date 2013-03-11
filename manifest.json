@@ -2,7 +2,7 @@
    "manifest_version": 2,
    "content_scripts": [ {
       "all_frames": true,
-      "js": [ "hanhai.js" ],
+      "js": [ "hanhai.user.js" ],
       "matches": [ "http://bbs.ustc.edu.cn/*","http://bbs2.ustc.edu.cn/*","http://bbs3.ustc.edu.cn/*","http://bbs6.ustc.edu.cn/*" ],
       "run_at": "document_end"
    } ],
@@ -12,5 +12,5 @@
 	  "128": "icon.png"
    },
    "name": "HanHai(瀚海星云)",
-   "version" : "0.9994"
+   "version" : "0.9995"
 }

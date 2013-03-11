@@ -762,7 +762,7 @@ if(isBoard()){
     // fix refresh button issuse
     var elements = document.getElementsByClassName("reload"); 
     (elements[0]).href = "javascript:document.location.reload(true)";
-    document.addEventListener("keyup",KeyHandlerBoard,true);    
+    document.addEventListener("keypress",KeyHandlerBoard,true);    
     window.focus();
 } else if (isThread()) {            
     // document.body.focus();        
@@ -781,11 +781,11 @@ if(isBoard()){
     // { 
 	document.addEventListener("scroll",FollowScroll,true); 
     // }
-    document.addEventListener("keyup",KeyHandlerThread,true);    
+    document.addEventListener("keypress",KeyHandlerThread,true);    
     window.focus();
 } else if (isSingleThread()) {
     getPosts();        
-    document.addEventListener("keyup",KeyHandlerSThread,true);
+    document.addEventListener("keypress",KeyHandlerSThread,true);
 }    
 ;
 
